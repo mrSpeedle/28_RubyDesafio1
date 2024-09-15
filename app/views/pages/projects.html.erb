@@ -1,35 +1,126 @@
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <img src="ruta_de_tu_imagen1.jpg" class="card-img-top" alt="Proyecto 1">
-        <div class="card-body">
-          <h5 class="card-title">Proyecto 1</h5>
-          <p class="card-text">Descripción breve del proyecto 1.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+<div class="projects-section mt-5 py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Tarjeta Garlic -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselGarlic" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag 'Garlic1.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'Garlic' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'Garlic2.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'Garlic 2' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'Garlic3.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'Garlic 3' %>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGarlic" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGarlic" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Garlic</h5>
+            <p class="card-text">Videojuego de acción errático que mezcla la música synthwave con el descuartizamiento de frutas endemoniadas.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta KFE -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="kfeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag 'KFE1.png', class: 'd-block w-100', alt: 'KFE Image 1' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'KFE2.png', class: 'd-block w-100', alt: 'KFE Image 2' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'KFE3.png', class: 'd-block w-100', alt: 'KFE Image 3' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'KFE4.png', class: 'd-block w-100', alt: 'KFE Image 4' %>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#kfeCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#kfeCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">KFE</h5>
+            <p class="card-text">Descripción de KFE aquí.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta VIDA -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselVida" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag 'VIDA.jpg', class: 'd-block w-100', alt: 'Project VIDA 1', data: { bs_toggle: 'tooltip' }, title: 'VIDA 1' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'VIDA1.png', class: 'd-block w-100', alt: 'Project VIDA 2', data: { bs_toggle: 'tooltip' }, title: 'VIDA 2' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'VIDA2.png', class: 'd-block w-100', alt: 'Project VIDA 3', data: { bs_toggle: 'tooltip' }, title: 'VIDA 3' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'VIDA3.png', class: 'd-block w-100', alt: 'Project VIDA 4', data: { bs_toggle: 'tooltip' }, title: 'VIDA 4' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag 'VIDA4.png', class: 'd-block w-100', alt: 'Project VIDA 5', data: { bs_toggle: 'tooltip' }, title: 'VIDA 5' %>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVida" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVida" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Proyecto VIDA</h5>
+            <p class="card-text">Virtualización del Aprendizaje (VIDA), es un proyecto dedicado a gamificar la experiencia educativa en el aula usando herramientas innovativas, tales como modelos 3D y la realidad virtual, para así entregar la mejor educación posible.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="ruta_de_tu_imagen2.jpg" class="card-img-top" alt="Proyecto 2">
-        <div class="card-body">
-          <h5 class="card-title">Proyecto 2</h5>
-          <p class="card-text">Descripción breve del proyecto 2.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+
+    <!-- Tarjeta PBB -->
+    <div class="card mt-5">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <%= image_tag 'PBBPortada.png', class: 'img-fluid', alt: 'PBB' %>
         </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="ruta_de_tu_imagen3.jpg" class="card-img-top" alt="Proyecto 3">
-        <div class="card-body">
-          <h5 class="card-title">Proyecto 3</h5>
-          <p class="card-text">Descripción breve del proyecto 3.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">PioBoomBattles</h5>
+            <p class="card-text">Acción, aventuras, puzzles y gallinas, ¿Qué más puedes pedir?</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-

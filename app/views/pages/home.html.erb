@@ -66,6 +66,7 @@
     </a>
   </div>
 
+
 <!-- HTML + CSS -->
   <div class="container mt-5">
     <h2>HTML + CSS</h2>
@@ -199,3 +200,43 @@
       </a>
     </div>
   </div>
+
+
+<!-- Modelado 3D -->
+<div class="container mt-5">
+  <h2>Modelado 3D</h2>
+  <p>Aquí algunos proyectos de modelado en 3D que he realizado.</p>
+  <div id="modelingCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-4">
+            <%= link_to 'https://sketchfab.com/mrSpeedle' do %>
+              <%= image_tag 'placeholder', class: 'd-block w-100', alt: 'Model 1', data: { bs_toggle: 'tooltip' }, title: 'Modelo 1' %>
+            <% end %>
+          </div>
+          <div class="col-4">
+            <%= link_to 'https://sketchfab.com/mrSpeedle' do %>
+              <%= image_tag 'placeholder', class: 'd-block w-100', alt: 'Model 2', data: { bs_toggle: 'tooltip' }, title: 'Modelo 2' %>
+            <% end %>
+          </div>
+          <div class="col-4">
+            <%= link_to 'https://sketchfab.com/mrSpeedle' do %>
+              <%= image_tag 'placeholder', class: 'd-block w-100', alt: 'Model 3', data: { bs_toggle: 'tooltip' }, title: 'Modelo 3' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <!-- Añadir más items aquí si es necesario -->
+    </div>
+    <!-- Flechas -->
+    <a class="carousel-control-prev" href="#modelingCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#modelingCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>

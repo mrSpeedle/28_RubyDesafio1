@@ -15,29 +15,6 @@ body {
     background-color: #0e0533;
 }
 
-.btn-primary {
-    background-color: #0e0533;
-    border-color: #0e0533;
-}
-
-.btn-primary:hover {
-    background-color: #0e0533;
-    border-color: #0e0533;
-}
-
-.footer-custom {
-    background-color: #0e0533;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-custom a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.5rem;
-}
-
 .hero {
     height: 100vh;
     background-color: #0e0533;
@@ -92,6 +69,119 @@ p {
     max-height: 400px;
     /* Ajusta la altura máxima */
     object-fit: cover;
+    margin: 0;
     /* Para que las imágenes se ajusten correctamente */
 }
 
+/*projects windowvista*/
+
+.projects-section {
+    background-color: #0e0533;
+    /* Mismo color que tu navbar */
+    padding: 50px 0;
+    /* Añade espacio alrededor */
+}
+
+/* Estilo para las tarjetas */
+.card {
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    /* Para evitar que el contenido sobresalga */
+    margin-right: 0;
+}
+
+/* Tamaño consistente de las imágenes */
+.carousel-item img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Efecto hover para agrandar la imagen */
+.card img {
+    transition: transform 0.3s ease;
+    /* Suaviza el agrandamiento */
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    /* Agranda la imagen ligeramente */
+}
+
+
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #000;
+}
+
+.card-text {
+    color: #666;
+}
+
+
+
+/* Sección de Contacto */
+.contact-section {
+    background-color: #0e0533;
+    padding: 80px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-section h1 {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.contact-section form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section .form-label {
+    color: #0e0533;
+    text-align: left; /* Alinea el texto de las etiquetas a la izquierda */
+    display: block; /* Asegura que las etiquetas ocupen toda la anchura del formulario */
+}
+
+.contact-section .form-control {
+    text-align: left; /* Alinea el texto dentro de los campos de entrada a la izquierda */
+}
+
+.contact-section .btn-primary {
+    background-color: #0e0533;
+    border: none;
+    margin-left: auto;
+    display: block;
+}
+
+
+
+/*Footer*/
+.footer-custom {
+    background-color: #0e0533;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-custom a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
