@@ -1,11 +1,14 @@
 /* app/assets/stylesheets/custom.css */
-html, body {
+html,
+body {
     background-color: #0e0533;
     color: #ffffff;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    text-align: center;
+    /* Centra el texto */
 }
 
 .navbar-custom {
@@ -22,28 +25,6 @@ html, body {
     border-color: #0e0533;
 }
 
-.hero {
-    height: 100vh;
-    background-color: #0e0533;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    text-align: center;
-    padding: 0 10%;
-    width: 100%;
-    margin: 0;
-}
-
-.hero .left,
-.hero .right {
-    width: 30%;
-}
-
-.hero .center {
-    width: 40%;
-}
-
 .footer-custom {
     background-color: #0e0533;
     color: white;
@@ -56,3 +37,61 @@ html, body {
     margin: 0 10px;
     font-size: 1.5rem;
 }
+
+.hero {
+    height: 100vh;
+    background-color: #0e0533;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 0 0 10%;
+    width: 100%;
+    margin: 0;
+}
+
+.hero .content {
+    max-width: 50%;
+    text-align: left;
+    margin-right: auto;
+}
+
+.hero .content h2 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.hero .content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero .content p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.html-section,
+h2,
+p {
+    color: #ffffff;
+    /* Asegúrate de que el texto sea blanco */
+    text-align: center;
+}
+
+.carousel-item .col-md-4 {
+    padding: 0 15px;
+    /* Añade margen entre las imágenes */
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 400px;
+    /* Controla el ancho máximo de la imagen */
+    max-height: 400px;
+    /* Ajusta la altura máxima */
+    object-fit: cover;
+    /* Para que las imágenes se ajusten correctamente */
+}
+

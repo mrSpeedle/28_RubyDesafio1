@@ -1,18 +1,201 @@
+<!-- Hero-Section -->
 <div class="hero">
-  <div class="left">
-    <h1>izquierda</h1>
-    <p>Esta es la página principal donde podrás ver mis proyectos y contactarme.</p>
-  </div>
-  <div class="center"> centro </div>
-  <div class="right">
-    <h1>derecha</h1>
-    <p>Esta es la página principal donde podrás ver mis proyectos y contactarme.</p>
+  <div class="content">
+    <h2>Sobre Mí</h2>
+    <h1>Hola, soy Sion Maldonado</h1>
+    <p>Me gradué el año pasado y tengo varias certificaciones, incluyendo un nivel C2 en inglés certificado por EF Set.</p>
+    <p>Domino Maya3D y tengo conocimientos avanzados de Photoshop. Poseo certificados en creación de videojuegos 2D y 3D de la Universidad Santo Tomás Concepción, 
+      donde también fui tutor.</p>
+    <p>Mi lengua nativa es el español y tengo conocimientos prácticos de Git Bash, Azure y Power BI. Soy un solucionador de problemas nato, siempre buscando respuestas.</p>
   </div>
 </div>
 
+<!-- JavaScript -->
 <div class="container mt-5">
-  <h2>Proyectos</h2>
-  <p>Aquí puedes ver algunos de mis proyectos destacados.</p>
+  <h2>JavaScript</h2>
+  <p>Pequeño portafolio, por ahora...</p>
+  <div id="jsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-4">
+            <%= link_to 'https://github.com/mrSpeedle/23_pyramidJs' do %>
+              <%= image_tag 'js1.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'Pirámide en JS' %>
+            <% end %>
+          </div>
+          <div class="col-4">
+            <%= link_to 'https://github.com/mrSpeedle/24_GradebookApp' do %>
+              <%= image_tag 'js2.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'Libro de notas funcional' %>
+            <% end %>
+          </div>
+          <div class="col-4">
+            <%= link_to 'https://github.com/mrSpeedle/25_RolePlayingGame' do %>
+              <%= image_tag 'js3.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'Juego RPG' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-4">
+            <%= link_to 'https://github.com/mrSpeedle/27_RockPaperScissors' do %>
+              <%= image_tag 'js4.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'Cachiripum' %>
+            <% end %>
+          </div>
+          <div class="col-4">
+            <%= link_to 'https://github.com/mrSpeedle/26_CalorieCounter' do %>
+              <%= image_tag 'js5.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'Contador de Calorías' %>
+            <% end %>
+          </div>
+          <div class="col-4">
+            <%= link_to 'placeholder' do %>
+              <%= image_tag 'js6.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'Reproductor de música, WIP' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FlechasJS -->
+    <a class="carousel-control-prev" href="#jsCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#jsCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-</div>
+<!-- HTML + CSS -->
+  <div class="container mt-5">
+    <h2>HTML + CSS</h2>
+    <p>Una colección de varios(demasiados) proyectos pequeños, utilizando HTML y CSS para su construcción.</p>
+    <div id="htmlCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/5_CatPhotoApp' do %>
+                <%= image_tag 'html1.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'Aplicación de Gatos Sencilla' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/6_MenuCafe' do %>
+                <%= image_tag 'html2.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'Menú de Café' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/7_ColoredMarkers' do %>
+                <%= image_tag 'html3.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'CSS Markers' %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/8_RegistrationForm' do %>
+                <%= image_tag 'html4.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'Form de Registro' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/9_SurveyForm' do %>
+                <%= image_tag 'html5.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'Survey Form' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/10_RothkoPainting' do %>
+                <%= image_tag 'html6.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'Rothko' %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/11_PhotoGallery_Flexbox' do %>
+                <%= image_tag 'html7.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'PhotoGallery Flexbox' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/12_NutritionLabel' do %>
+                <%= image_tag 'html8.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'Nutritional Label' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/13_Quiz' do %>
+                <%= image_tag 'html9.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'Quiz' %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/14_TributePage' do %>
+                <%= image_tag 'html10.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'Tribute Page' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/15_BalanceSheet_PseudoSelectors' do %>
+                <%= image_tag 'html11.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'PseudoSelectors' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/16_CatPainting_IntermediateCSS' do %>
+                <%= image_tag 'html12.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'CSS Intermedio, Pintura Gato' %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/17_Piano' do %>
+                <%= image_tag 'html13.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'Piano' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/18_CitySkylines' do %>
+                <%= image_tag 'html14.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'Skylines, cambia de color según el tamaño' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/19_Magazine' do %>
+                <%= image_tag 'html15.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'Magazine' %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/20_LandingPage' do %>
+                <%= image_tag 'html16.png', class: 'd-block w-100', alt: 'Project 1', data: { bs_toggle: 'tooltip' }, title: 'LandingPage Chafa' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/21_FerrisWheel' do %>
+                <%= image_tag 'html17.png', class: 'd-block w-100', alt: 'Project 2', data: { bs_toggle: 'tooltip' }, title: 'FerrisWheel, se mueve' %>
+              <% end %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'https://github.com/mrSpeedle/22_Penguin' do %>
+                <%= image_tag 'html18.png', class: 'd-block w-100', alt: 'Project 3', data: { bs_toggle: 'tooltip' }, title: 'Pinguino que saluda' %>
+              <% end %>
+            </div>
+          </div>
+        </div>
 
+    <!-- Flechas -->
+      </div>
+      <a class="carousel-control-prev" href="#htmlCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#htmlCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
