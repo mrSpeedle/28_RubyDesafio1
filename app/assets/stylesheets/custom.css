@@ -1,0 +1,58 @@
+/* app/assets/stylesheets/custom.css */
+html, body {
+    background-color: #0e0533;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-custom {
+    background-color: #0e0533;
+}
+
+.btn-primary {
+    background-color: #0e0533;
+    border-color: #0e0533;
+}
+
+.btn-primary:hover {
+    background-color: #0e0533;
+    border-color: #0e0533;
+}
+
+.hero {
+    height: 100vh;
+    background-color: #0e0533;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding: 0 10%;
+    width: 100%;
+    margin: 0;
+}
+
+.hero .left,
+.hero .right {
+    width: 30%;
+}
+
+.hero .center {
+    width: 40%;
+}
+
+.footer-custom {
+    background-color: #0e0533;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-custom a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
